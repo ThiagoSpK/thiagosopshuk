@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+    </header>
+
+    <section class="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Thiago Sopshuk</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            
+            let nome = document.getElementById('nome').value.trim();
+            let email = document.getElementById('email').value.trim();
+            let mensagem = document.getElementById('mensagem').value.trim();
+            let statusMessage = document.getElementById('statusMessage');
+
+            if (nome && email && mensagem) {
+                // Aqui você pode fazer uma requisição Ajax para enviar os dados para o servidor
+                statusMessage.textContent = "Mensagem enviada com sucesso!";
+                statusMessage.style.color = "green";
+            } else {
+                statusMessage.textContent = "Por favor, preencha todos os campos.";
+                statusMessage.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>

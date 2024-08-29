@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+        <h1>Portfólio</h1>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <p>Explore as seções para saber mais sobre mim e meu trabalho.</p>
+        <p1><a href="sobre.html" target="_blank">Sobre Mim</a><br>
+        <a href="formacao.html" target="_blank">Formação</a><br>
+        <a href="projetos.html" target="_blank">Projetos</a><br>
+        <a href="contato.html" target="_blank">Contato</a><br></p1>
+    <script>
+        function openAllLinks() {
+            const links = document.querySelectorAll('#link-list a');
+            links.forEach(link => {
+                window.open(link.href, '_blank');
+            });
+        }
+    </script>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Thiago Sopshuk</p>
+    </footer>
+</body>
+</html>

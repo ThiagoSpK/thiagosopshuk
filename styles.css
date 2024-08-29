@@ -1,0 +1,123 @@
+/* Definições Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    background-image: url('fundo.jpg'); /* Caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto rola a página */
+    color: #333; /* Cor do texto padrão */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    width: 180px; /* Largura do quadrado */
+    height: 110px; /* Altura do quadrado */
+    background-color: #FFFFFF; /* Cor de fundo branco */
+    margin: 20px auto; /* Centraliza o quadrado horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Sombra preta */
+    border-radius: 8px; /* Bordas arredondadas opcionais */
+}
+
+/* Estilo para seções gerais */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #000000; /* Cor do texto preto */
+}
+
+section p1 {
+    font-size: 1em;
+    line-height: 1.05;
+    color: #000000; /* Cor do texto preto */
+}
+
+/* Estilo para o formulário de contato */
+section.contato {
+    padding: 20px;
+    background-color: #000000; /* Fundo preto */
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #ffffff; /* Cor do texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+section.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0f7fa; /* Cor do título */
+}
+
+section.contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0f7fa; /* Cor dos rótulos */
+}
+
+section.contato input[type="text"],
+section.contato input[type="email"],
+section.contato textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fundo dos campos de input */
+    color: #000000; /* Cor do texto nos inputs */
+}
+
+section.contato button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff; /* Fundo do botão */
+    color: #000000; /* Cor do texto no botão */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição para fundo e cor do texto */
+}
+
+section.contato button:hover {
+    background-color: #000000; /* Fundo preto ao passar o mouse */
+    color: #ffffff; /* Texto branco ao passar o mouse */
+}
+
+
+/* Estilo para o rodapé */
+footer {
+    color: #ffffff; /* Cor do texto branco */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo para links */
+a {
+    color: #000000; /* Cor do link preta */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #004ba0; /* Azul mais escuro ao passar o mouse */
+}
